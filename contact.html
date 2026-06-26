@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ｜Vrai</title>
+  <meta name="description" content="無料相談・お問い合わせはこちらから。ママ起業家・医療従事者向けコンサル＆コーチング。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+<!-- ナビゲーション -->
+<nav class="nav scrolled" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo" style="color:var(--purple-700);">Vrai</a>
+    <ul class="nav-links">
+      <li><a href="/#about"    class="nav-link" style="color:var(--gray-700);">About</a></li>
+      <li><a href="/#services" class="nav-link" style="color:var(--gray-700);">Services</a></li>
+      <li><a href="/blog.html" class="nav-link" style="color:var(--gray-700);">Blog</a></li>
+      <li><a href="/#sns"      class="nav-link" style="color:var(--gray-700);">SNS</a></li>
+      <li><a href="/contact.html" class="nav-link nav-cta">お問い合わせ</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="メニューを開く">
+      <span style="background:var(--purple-700);"></span>
+      <span style="background:var(--purple-700);"></span>
+      <span style="background:var(--purple-700);"></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile" role="dialog" aria-modal="true">
+  <button class="nav-mobile-close" aria-label="閉じる">×</button>
+  <a href="/"          class="nav-mobile-link">Home</a>
+  <a href="/#about"    class="nav-mobile-link">About</a>
+  <a href="/#services" class="nav-mobile-link">Services</a>
+  <a href="/blog.html" class="nav-mobile-link">Blog</a>
+  <a href="/#sns"      class="nav-mobile-link">SNS</a>
+  <a href="/contact.html" class="nav-mobile-link">お問い合わせ</a>
+</div>
+
+<!-- ページヒーロー -->
+<div class="page-hero">
+  <div class="container">
+    <span class="section-label" style="color:rgba(255,255,255,0.6);">Contact</span>
+    <h1 class="page-hero-title">お問い合わせ</h1>
+    <p class="page-hero-sub">
+      まずは無料相談から。どんな小さなことでも、お気軽にご連絡ください。
+    </p>
+  </div>
+</div>
+
+<!-- お問い合わせフォーム -->
+<section class="contact-section" style="padding-top:4rem;">
+  <div class="container">
+    <div class="contact-inner">
+
+      <!-- 左: インフォメーション -->
+      <div class="fade-up">
+        <span class="section-label">Let's Talk</span>
+        <h2 class="section-title" style="font-size:1.75rem;">
+          あなたの「次の一歩」を<br>一緒に考えます
+        </h2>
+        <p class="section-sub" style="margin-top:0.75rem; margin-bottom:2.5rem;">
+          「起業に興味があるけど何から始めれば？」「自分に向いているのかわからない」——そんな段階でも大丈夫です。
+        </p>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">⏰</div>
+          <div>
+            <p class="contact-info-label">返信について</p>
+            <p class="contact-info-value">通常2〜3営業日以内にご返信いたします。</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">💬</div>
+          <div>
+            <p class="contact-info-label">無料相談</p>
+            <p class="contact-info-value">初回30分の無料相談を承っています。Zoomまたはお電話でのご相談が可能です。</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">🔒</div>
+          <div>
+            <p class="contact-info-label">プライバシー</p>
+            <p class="contact-info-value">いただいた情報は、ご返信と無料相談以外の目的には使用いたしません。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 右: フォーム -->
+      <div class="fade-up">
+        <div class="contact-card">
+          <h3 class="contact-card-title">お問い合わせフォーム</h3>
+
+          <!-- formsubmit.co: 登録不要。初回送信時に届く確認メールを承認するだけで有効になります -->
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/sakamako.03@gmail.com"
+            method="POST"
+          >
+            <!-- formsubmit.co の設定 -->
+            <input type="hidden" name="_subject" value="【Vrai HP】お問い合わせが届きました">
+            <input type="hidden" name="_next" value="/contact.html?sent=1">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
+            <div class="form-group">
+              <label class="form-label" for="name">
+                お名前<span class="required">*</span>
+              </label>
+              <input
+                class="form-input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="山田 花子"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">
+                メールアドレス<span class="required">*</span>
+              </label>
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="service">
+                ご興味のあるサービス
+              </label>
+              <select class="form-select" id="service" name="service">
+                <option value="">選択してください</option>
+                <option value="mama">ママ向け 起業コンサル</option>
+                <option value="coaching">認知科学コーチング</option>
+                <option value="medical">医療従事者向け 起業コンサル</option>
+                <option value="other">その他・わからない</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">
+                お問い合わせ内容<span class="required">*</span>
+              </label>
+              <textarea
+                class="form-textarea"
+                id="message"
+                name="message"
+                placeholder="現在の状況や、お聞きしたいことをご自由にお書きください。"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group" style="display:flex; align-items:flex-start; gap:0.75rem;">
+              <input type="checkbox" id="privacy" name="privacy" required
+                style="margin-top:0.2rem; accent-color:var(--purple-600); flex-shrink:0;" />
+              <label for="privacy" style="font-size:0.825rem; color:var(--gray-600); line-height:1.6;">
+                個人情報はご返信・無料相談目的にのみ使用し、第三者への提供は行いません。上記に同意します。
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">
+              送信する →
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer class="footer" style="margin-top:4rem;">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <a href="/" class="footer-logo">Vrai</a>
+        <p class="footer-tagline">誰もが生きやすい世界をつくる。</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Menu</p>
+        <ul class="footer-links">
+          <li><a href="/"          class="footer-link">Home</a></li>
+          <li><a href="/#services" class="footer-link">Services</a></li>
+          <li><a href="/blog.html" class="footer-link">Blog</a></li>
+          <li><a href="/contact.html" class="footer-link">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">SNS</p>
+        <ul class="footer-links">
+          <li><a href="https://www.instagram.com/maco_re.style/" class="footer-link" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/"  class="footer-link" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Vrai. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

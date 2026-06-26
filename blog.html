@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ブログ｜Vrai</title>
+  <meta name="description" content="ママ起業コンサル、認知科学コーチング、AIエージェント活用、補助金・助成金に関する情報を発信中。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+<!-- ナビゲーション -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">Vrai</a>
+    <ul class="nav-links">
+      <li><a href="/#about"    class="nav-link">About</a></li>
+      <li><a href="/#services" class="nav-link">Services</a></li>
+      <li><a href="/blog.html" class="nav-link">Blog</a></li>
+      <li><a href="/#sns"      class="nav-link">SNS</a></li>
+      <li><a href="/contact.html" class="nav-link nav-cta">お問い合わせ</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile" role="dialog" aria-modal="true">
+  <button class="nav-mobile-close" aria-label="閉じる">×</button>
+  <a href="/"          class="nav-mobile-link">Home</a>
+  <a href="/#about"    class="nav-mobile-link">About</a>
+  <a href="/#services" class="nav-mobile-link">Services</a>
+  <a href="/blog.html" class="nav-mobile-link">Blog</a>
+  <a href="/#sns"      class="nav-mobile-link">SNS</a>
+  <a href="/contact.html" class="nav-mobile-link">お問い合わせ</a>
+</div>
+
+<!-- ページヒーロー -->
+<div class="page-hero">
+  <div class="container">
+    <span class="section-label" style="color:rgba(255,255,255,0.6);">Blog</span>
+    <h1 class="page-hero-title">ブログ</h1>
+    <p class="page-hero-sub">
+      起業・コーチング・AI・補助金——あなたの「次の一歩」に役立つ情報を発信しています。
+    </p>
+  </div>
+</div>
+
+<!-- タブナビゲーション -->
+<div class="blog-tabs-wrap">
+  <div class="container">
+    <div class="blog-tabs" role="tablist">
+      <button class="blog-tab active" data-tab="mama"     role="tab" aria-selected="true">👶 ママ起業コンサル</button>
+      <button class="blog-tab"        data-tab="coaching" role="tab" aria-selected="false">🧠 認知科学コーチング</button>
+      <button class="blog-tab"        data-tab="ai"       role="tab" aria-selected="false">🤖 AIエージェント</button>
+      <button class="blog-tab"        data-tab="subsidy"  role="tab" aria-selected="false">💰 補助金・助成金</button>
+    </div>
+  </div>
+</div>
+
+<!-- ブログ記事一覧 -->
+<div class="blog-section">
+  <div class="container">
+
+    <!-- ママ起業コンサル -->
+    <div class="blog-panel active" id="panel-mama" role="tabpanel">
+      <div class="blog-panel-title">👶 ママ起業コンサル</div>
+      <p class="blog-panel-desc">
+        子育て中のママが、自分らしく稼ぐビジネスを作るためのヒントを発信しています。
+      </p>
+      <div id="posts-mama">
+        <!-- blog-data.js により動的に生成 -->
+      </div>
+    </div>
+
+    <!-- 認知科学コーチング -->
+    <div class="blog-panel" id="panel-coaching" role="tabpanel">
+      <div class="blog-panel-title">🧠 認知科学コーチング</div>
+      <p class="blog-panel-desc">
+        脳の仕組みを使って「行動できる自分」をつくる方法を解説します。
+      </p>
+      <div id="posts-coaching">
+        <!-- blog-data.js により動的に生成 -->
+      </div>
+    </div>
+
+    <!-- AIエージェント -->
+    <div class="blog-panel" id="panel-ai" role="tabpanel">
+      <div class="blog-panel-title">🤖 AIエージェント</div>
+      <p class="blog-panel-desc">
+        一人起業家がAIを活用して生産性を劇的に高める方法を紹介します。
+      </p>
+      <div id="posts-ai">
+        <!-- blog-data.js により動的に生成 -->
+      </div>
+    </div>
+
+    <!-- 補助金・助成金 -->
+    <div class="blog-panel" id="panel-subsidy" role="tabpanel">
+      <div class="blog-panel-title">💰 補助金・助成金</div>
+      <p class="blog-panel-desc">
+        女性・ママ起業家が活用できる補助金・助成金の最新情報をまとめています。
+      </p>
+      <div id="posts-subsidy">
+        <!-- blog-data.js により動的に生成 -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta" style="padding:4rem 0;">
+  <div class="container">
+    <div style="text-align:center;">
+      <h2 class="section-title" style="color:var(--white); font-size:1.75rem;">
+        まずは無料相談から
+      </h2>
+      <p class="cta-sub">
+        ブログを読んで「もっと詳しく聞きたい」と思ったら、<br>
+        お気軽にお問い合わせください。
+      </p>
+      <a href="/contact.html" class="btn btn-white">無料相談に申し込む</a>
+    </div>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <a href="/" class="footer-logo">Vrai</a>
+        <p class="footer-tagline">誰もが生きやすい世界をつくる。</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Menu</p>
+        <ul class="footer-links">
+          <li><a href="/"          class="footer-link">Home</a></li>
+          <li><a href="/#services" class="footer-link">Services</a></li>
+          <li><a href="/blog.html" class="footer-link">Blog</a></li>
+          <li><a href="/contact.html" class="footer-link">お問い合わせ</a></li>
+          <li><a href="https://www.instagram.com/maco_re.style/" class="footer-link" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Blog</p>
+        <ul class="footer-links">
+          <li><a href="/blog.html#mama"     class="footer-link">ママ起業コンサル</a></li>
+          <li><a href="/blog.html#coaching" class="footer-link">認知科学コーチング</a></li>
+          <li><a href="/blog.html#ai"       class="footer-link">AIエージェント</a></li>
+          <li><a href="/blog.html#subsidy"  class="footer-link">補助金・助成金</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Vrai. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/blog-data.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
